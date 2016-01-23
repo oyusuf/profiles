@@ -1,5 +1,5 @@
 class profiles::elkkibana {
- include kibana4}
+   include kibana4}
 class { '::kibana4':
   package_ensure    => '4.3.0-linux-x64',
   package_provider  => 'archive',
