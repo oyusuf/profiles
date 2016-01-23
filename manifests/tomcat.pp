@@ -1,16 +1,8 @@
 class profiles::tomcat {
-  include tomcat} 
-class { 'tomcat':
-  install_from_source => false,
-}
-
-class { 'epel': }->
-tomcat::instance{ 'default':
-  package_name => 'tomcat',
+  include tomcat}
+class { 'tomcat': }
+class { 'java': }
+tomcat::instance { 'test':
+  source_url => 'http://mirror.nexcess.net/apache/tomcat/tomcat-8/v8.0.8/bin/apache-tomcat-8.0.8.tar.gz'
 }->
-
-tomcat::service { 'default':
-  use_jsvc     => false,
-  use_init     => true,
-  service_name => 'tomcat',
-}
+tomcat::service { 'default': } 
