@@ -1,5 +1,5 @@
 class profiles::elkkibana {
-   include kibana4}
+
 class { '::kibana4':
   package_ensure    => '4.3.0-linux-x64',
   package_provider  => 'archive',
@@ -14,4 +14,5 @@ class { '::kibana4':
       'server.host'           => '10.10.10.20',
       'elasticsearch.url'     => 'http://10.10.10.20:9200',
       }
-}
+  }
+} 
