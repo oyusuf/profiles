@@ -1,5 +1,6 @@
 class profiles::elklogstash {
   include logstash}
+  class {'logstash':}
   class { '::logstash':
     manage_repo     => true,
     repo_version    => '1.4',
