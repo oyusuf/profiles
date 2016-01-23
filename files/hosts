@@ -1,0 +1,21 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.10.10.2   dnesx2 dnesx2.datanetx.comm
+10.10.10.4   dnesx4 dnesx4.datanetx.comm
+10.10.10.11  ns1   ns1.datanetx.comm
+10.10.10.12  ns2   ns2.datanetx.comm
+10.10.10.13  pm1   pm1.datanetx.comm
+10.10.10.14  dn14  dn14.datanetx.comm
+10.10.10.15  dn15  dn15.datanetx.comm
+10.10.10.16  dn16  dn16.datanetx.comm
+10.10.10.17  dn17  dn17.datanetx.comm
+10.10.10.18  dn18  dn18.datanetx.comm
+10.10.10.18  mail  mail.datanetx.comm
+10.10.10.19  dn19  dn19.datanetx.comm
+10.10.10.20  dn20  dn20.datanetx.comm
+10.10.10.21  dn21  dn21.datanetx.comm
+10.10.10.22  dn22  dn22.datanetx.comm
+10.10.10.23  dn23  dn23.datanetx.comm
+10.10.10.24  dn24  dn24.datanetx.comm
+10.10.10.25  dn25  dn25.datanetx.comm
+
