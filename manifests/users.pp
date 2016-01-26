@@ -3,8 +3,8 @@ class profiles::users {
     comment     => 'oyusuf',
     home        => '/home/oyusuf',
     shell       => '/bin/bash',
-    uid         => 501,
-    gid         => 501,
+    uid         => 503,
+    gid         => 503,
     managehome  => true,
     password    => '$1$TMdOH2gV$drAuBV2ZySYArVXL2/OQG1',
     groups      => oyusuf,
@@ -12,7 +12,7 @@ class profiles::users {
   }
 
   group { 'oyusuf':
-    gid         =>501,
+    gid         =>503,
   }
 
   user { 'eyusuf':
