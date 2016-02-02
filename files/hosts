@@ -4,7 +4,7 @@
 10.10.10.4   dnesx4 dnesx4.datanetx.comm
 10.10.10.11  ns1   ns1.datanetx.comm
 10.10.10.12  ns2   ns2.datanetx.comm
-10.10.10.13  pm1   pm1.datanetx.comm
+10.10.10.13  dn13  dn13.datanetx.comm
 10.10.10.14  dn14  dn14.datanetx.comm
 10.10.10.15  dn15  dn15.datanetx.comm
 10.10.10.16  dn16  dn16.datanetx.comm
@@ -18,4 +18,3 @@
 10.10.10.23  dn23  dn23.datanetx.comm
 10.10.10.24  dn24  dn24.datanetx.comm
 10.10.10.25  dn25  dn25.datanetx.comm
-
