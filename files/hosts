@@ -8,9 +8,9 @@
 10.10.10.14  dn14  dn14.datanetx.comm
 10.10.10.15  dn15  dn15.datanetx.comm
 10.10.10.16  dn16  dn16.datanetx.comm
-10.10.10.17  dn17  dn17.datanetx.comm
+10.10.10.17  dn17.datanetx.comm  dn17
+10.10.10.17  mail.datanetx.comm  mail
 10.10.10.18  dn18  dn18.datanetx.comm
-10.10.10.18  mail  mail.datanetx.comm
 10.10.10.19  dn19  dn19.datanetx.comm
 10.10.10.20  dn20  dn20.datanetx.comm
 10.10.10.21  dn21  dn21.datanetx.comm
