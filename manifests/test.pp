@@ -1,3 +1,3 @@
-class profiles::tomcat {
+class profiles::test {
     class { 'tomcat':}
 }
