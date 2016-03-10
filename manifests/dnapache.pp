@@ -1,4 +1,4 @@
-class profiles::httpd {
+class profiles::dnapache {
   #  class { 'apache':}
      include apache }
 apache::vhost { '10.10.10.18':
