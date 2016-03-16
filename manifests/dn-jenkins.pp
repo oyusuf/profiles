@@ -1,4 +1,4 @@
-class profile::dn-jenkins {
+class profiles::dn-jenkins {
 #node 'dn19.datanetx.comm' {
    include jenkins
 #   include jenkins::master
