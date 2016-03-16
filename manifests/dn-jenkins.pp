@@ -1,7 +1,7 @@
 class profiles::dn-jenkins {
 #node 'dn19.datanetx.comm' {
-   include jenkins
-#   include jenkins::master
+#   include jenkins
+   include jenkins::master
 }
  firewall { '500 allow Jenkins inbound traffic':
     action => accept,
