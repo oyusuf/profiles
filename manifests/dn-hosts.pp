@@ -4,6 +4,5 @@ class profiles::dn-hosts {
     group   => "root",
     mode    =>  0644,
     source  =>  "puppet:///modules/profiles/hosts",
- }
-
+  }
 }
