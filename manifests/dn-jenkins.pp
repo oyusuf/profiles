@@ -7,4 +7,8 @@ class profiles::dn-jenkins {
     proto  =>   tcp,
     action =>  accept,
  }
+  jenkins::user {'oyusuf':
+     email => oyusuf@datanetx.comm
+     password => 'password',
+ }
 }
