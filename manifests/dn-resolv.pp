@@ -1,4 +1,4 @@
-class profiles::resolv {
+class profiles::dn-resolv {
    file { "/etc/resolv.conf":
     owner   => "root",
     group   => "root",
