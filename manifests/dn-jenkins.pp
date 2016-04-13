@@ -8,7 +8,7 @@ class profiles::dn-jenkins {
     action =>  accept,
  }
   jenkins::user {'oyusuf':
-     email => oyusuf@datanetx.comm
+     email => 'oyusuf@datanetx.comm',
      password => 'password',
  }
 }
