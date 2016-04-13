@@ -1,4 +1,4 @@
-class profiles::sudoers {
+class profiles::dn-sudoers {
    package { "sudo":
    ensure => present,
  }

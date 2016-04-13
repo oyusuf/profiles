@@ -1,4 +1,4 @@
-class profiles::checkmk {
+class profiles::dn-checkmk {
    package { "check-mk-agent":
    ensure => present,
  }

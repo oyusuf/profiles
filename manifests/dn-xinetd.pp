@@ -1,4 +1,4 @@
-class profiles::xinetd {
+class profiles::dn-xinetd {
       package { 'xinetd':
         ensure => installed,
      }

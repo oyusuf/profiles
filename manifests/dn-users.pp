@@ -1,4 +1,4 @@
-class profiles::users {
+class profiles::dn-users {
     user { 'oyusuf':
     comment     => 'oyusuf',
     home        => '/home/oyusuf',

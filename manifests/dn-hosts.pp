@@ -1,4 +1,4 @@
-class profiles::hosts {
+class profiles::dn-hosts {
    file { "/etc/hosts":
     owner   => "root",
     group   => "root",

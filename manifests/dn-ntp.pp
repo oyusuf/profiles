@@ -1,4 +1,4 @@
-class profiles::ntp {
+class profiles::dn-ntp {
       package { 'ntp':
         ensure => installed,
       }
