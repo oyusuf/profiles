@@ -1,5 +1,4 @@
 class profiles::dn-spacewalk {
-  include rhn_register
   class { 'rhn_register':
     sslca         => '/var/www/html/pub/RHN-ORG-TRUSTED-SSL-CERT',
     serverurl     => 'https://10.10.10.51/XMLRPC',
