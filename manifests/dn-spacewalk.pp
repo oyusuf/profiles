@@ -10,5 +10,4 @@ class profiles::dn-spacewalk {
 #    activationkey => '1-d7c1e6d780491a52a24772a03d7f5797',
 # }
 #}
-
   include spacewalk::client
