@@ -1,7 +1,7 @@
 class profiles::dn-spacewalk {
-  class { 'rhn_register':
+   class { 'rhn_register':
     sslca         => '/var/www/html/pub/RHN-ORG-TRUSTED-SSL-CERT',
-    serverurl     => 'http://10.10.10.55',
+    serverurl     => 'http://10.10.10.55/XMLRPC',
 #    username      => 'oyusuf',
 #    password      => '#$P@ssw0rd',
     force         =>  'true',
