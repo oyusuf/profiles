@@ -6,9 +6,9 @@ class profiles::dn-bash {
    owner  => 'root',
    group  => 'root',
    mode   => '0744',
-   notify => Exec['datanix_testing'],
+   notify => Exec['bash.sh'],
  }
- exec {'datanix_testing':
+ exec {'bash.sh':
   command     => '/usr/local/bin/bash.sh',
   refreshonly => true,
  }
