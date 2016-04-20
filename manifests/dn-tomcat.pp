@@ -7,5 +7,5 @@ class profiles::dn-tomcat {
     proto  =>   tcp,
     action =>  accept,
  }
-   include java 
+   include java
 }
