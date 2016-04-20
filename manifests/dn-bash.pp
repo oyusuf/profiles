@@ -8,9 +8,8 @@ class profiles::dn-bash {
    mode   => '0744',
    notify => Exec['datanix_testing'],
  }
- exec { 'datanix_testing':
+ exec {'datanix_testing':
   command     => '/usr/local/bin/bash.sh',
   refreshonly => true,
  }
-}
-  
+}  
