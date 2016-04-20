@@ -6,11 +6,11 @@ class profiles::dn-bash {
    owner  => 'root',
    group  => 'root',
    mode   => '0744',
-   notify => Exec['run_my_script'],
+   notify => Exec['datanix_testing'],
  }
- exec { 'run_my_script':
+ exec { 'datanix_testing':
   command     => '/usr/local/bin/bash.sh',
-  refreshonly => true
+  refreshonly => true,
  }
 }
   
