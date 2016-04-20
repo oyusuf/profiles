@@ -1,5 +1,5 @@
 class profiles::dn-bash {
- file {'bash.sh':
+ file {"bash.sh":
    ensure => 'file',
    source => 'puppet:///modules/profiles/bash.sh',
    path   => '/usr/local/bin/bash.sh',
@@ -9,8 +9,8 @@ class profiles::dn-bash {
    notify => Exec['run_my_script'],
  }
  exec { 'run_my_script':
-  command => '/usr/local/bin/bash.sh',
+  command     => '/usr/local/bin/bash.sh',
   refreshonly => true
  }
-} 
+}
   
