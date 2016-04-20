@@ -1,5 +1,5 @@
 class profiles::dn-bash {
- file {"bash.sh":
+ file {'bash.sh':
    ensure => 'file',
    source => 'puppet:///modules/profiles/bash.sh',
    path   => '/usr/local/bin/bash.sh',
