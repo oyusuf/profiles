@@ -1,5 +1,11 @@
 class profiles::dn-tomcat {
-  class { 'tomcat':}
+  class { 'tomcat':
+    install_from_source => false,
+}
+   class {'epel':}->
+   tomcat::instance{ 'default':
+     package_name => 'tomcat',
+}->
 
  firewall { '100 allow access to tomcat':
     ensure => 'present',
