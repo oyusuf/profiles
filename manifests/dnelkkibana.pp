@@ -15,4 +15,4 @@ class { '::kibana4':
       'elasticsearch.url'     => 'http://10.10.10.20:9200',
       }
   }
-} 
+}

@@ -12,4 +12,4 @@ class profiles::dnbash {
   command     => '/usr/local/bin/bash.sh',
   refreshonly => true,
  }
-}  
+}

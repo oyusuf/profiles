@@ -3,8 +3,8 @@ class firewall::redhat (
   $enable = true
 ){
   service { 'iptables':
-    ensure => $ensure,
-    enable => $enable,
+    ensure    => $ensure,
+    enable    => $enable,
     hasstatus => true,
   }
 }

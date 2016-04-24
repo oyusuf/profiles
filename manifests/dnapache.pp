@@ -1,5 +1,5 @@
 class profiles::dn-apache {
-     include apache 
+     include apache
 
 apache::vhost { '10.10.10.18':
     port     => 80,

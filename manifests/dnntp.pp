@@ -14,4 +14,3 @@ class profiles::dnntp {
         subscribe => File['ntp.conf'],
       }
     }
-
