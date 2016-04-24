@@ -1,16 +1,25 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-10.10.10.2   dnesx2 dnesx2.datanetx.comm
-10.10.10.4   dnesx4 dnesx4.datanetx.comm
-10.10.10.41 ns1   ns1.datanetx.comm
-10.10.10.42 ns2   ns2.datanetx.comm
-10.10.10.50 dn50  dn50.datanetx.comm
-10.10.10.51 dn51  dn51.datanetx.comm puppet
-10.10.10.52 dn52  dn52.datanetx.comm
-10.10.10.53 dn51  dn53.datanetx.comm
-10.10.10.54 dn50  dn54.datanetx.comm
-10.10.10.55 dn55  dn55.datanetx.comm
-10.10.10.56 dn56  dn56.datanetx.comm
-10.10.10.57 dn57  dn57.datanetx.comm
-10.10.10.58 dn58  dn58.datanetx.comm
-10.10.10.59 dn59  dn59.datanetx.comm
+10.10.10.5   dnesx5     dnesx5.datanetx.comm
+10.10.10.10  dnesx10    dnesx10.datanetx.comm
+10.10.10.6   dnvcenter1 dnvcenter1.datanetx.comm
+10.10.10.7   dnvcenter2 dnvcenter2.datanetx.comm
+10.10.10.41  ns1   ns1.datanetx.comm
+10.10.10.42  ns2   ns2.datanetx.comm
+10.10.10.43  dn43  dn43.datanetx.comm
+10.10.10.44  dn44  dn44.datanetx.comm
+10.10.10.45  dn45  dn45.datanetx.comm
+10.10.10.46  dn46  dn46.datanetx.comm
+10.10.10.47  dn47  dn47.datanetx.comm
+10.10.10.48  dn48  dn48.datanetx.comm
+10.10.10.49  dn49  dn49.datanetx.comm
+10.10.10.50  dn50  dn50.datanetx.comm
+10.10.10.51  dn51  dn51.datanetx.comm puppet
+10.10.10.52  dn52  dn52.datanetx.comm
+10.10.10.53  dn53  dn53.datanetx.comm
+10.10.10.54  dn54  dn54.datanetx.comm
+10.10.10.55  dn55  dn55.datanetx.comm
+10.10.10.56  dn56  dn56.datanetx.comm
+10.10.10.57  dn57  dn57.datanetx.comm
+10.10.10.58  dn58  dn58.datanetx.comm
+
