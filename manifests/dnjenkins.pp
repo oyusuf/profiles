@@ -8,3 +8,5 @@ class profiles::dnjenkins {
     action =>  accept,
  }
 }
+
+### puppetlabs-firewall and rtyler-jenkins module require to get jenkins running####
