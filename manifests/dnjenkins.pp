@@ -1,4 +1,4 @@
-class profiles::dn-jenkins {
+class profiles::dnjenkins {
    include jenkins
 
   firewall { '100 allow access to jenkins':
