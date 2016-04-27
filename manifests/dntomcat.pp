@@ -6,5 +6,11 @@ class profiles::dntomcat {
      tomcat::instance { 'default':
         catalina_home => '/opt/tomcat',
  }
+  firewall { '100 allow access to tomcat':
+    ensure => 'present',
+    dport  =>   [8080],
+    proto  =>   tcp,
+    action =>  accept,
+}
 }
 
