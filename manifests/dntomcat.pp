@@ -1,4 +1,6 @@
 class profiles::dntomcat {
+    include tomcat
+ }
  
      tomcat::install { '/opt/tomcat':
        source_url => 'http://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.69/bin/apache-tomcat-7.0.69.tar.gz',
@@ -12,5 +14,3 @@ class profiles::dntomcat {
     proto  =>   tcp,
     action =>  accept,
 }
-}
-
