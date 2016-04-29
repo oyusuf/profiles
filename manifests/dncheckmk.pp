@@ -7,7 +7,7 @@ class profiles::dncheckmk {
     group   => 'root',
     mode    =>  '0644',
     source  =>  'puppet:///modules/profiles/check_mk',
-    require =>  Package ['check-mk-agent'],
+    require =>  Package['check-mk-agent'],
  }
 
 }
