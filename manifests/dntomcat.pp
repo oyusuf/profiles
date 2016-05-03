@@ -11,7 +11,7 @@ class profiles::dntomcat {
 
     tomcat::connector{'ajp-8081':
       ensure   => present
-      instance => 'dn54.datanetx.comm'
+      instance => 'dn54.datanetx.comm',
       protocol => 'AJP/1.3',
       port     => 8081,
       manage   => true,
