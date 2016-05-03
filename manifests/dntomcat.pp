@@ -1,5 +1,5 @@
 class profiles::dntomcat {
-# include tomcat
+  include tomcat
 
 #    tomcat::connector{'http-8080':
 #      ensure   => present,
@@ -26,12 +26,15 @@ class profiles::dntomcat {
 
 Exec {
   path => '/usr/bin:/usr/sbin/:/bin:/sbin:/usr/local/bin:/usr/local/sbin',
-}
+ } 
 
-include tomcat
-
-tomcat::instance {'dn54.datanetx.comm':
+ tomcat::instance::service{ 'tomcat':
+  ensure => 'running',
+  enable => "true",
+ } 
+ 
+ tomcat::instance {'dn54.datanetx.comm':
   ensure    => present,
   http_port => '8080',
-}
+ } 
 }
