@@ -30,7 +30,7 @@ Exec {
 
  tomcat::instance::service{ 'tomcat':
   ensure => 'running',
-  enable => "true",
+  enable => 'true',
  } 
  
  tomcat::instance {'dn54.datanetx.comm':
