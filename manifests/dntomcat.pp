@@ -1,26 +1,22 @@
 class profiles::dntomcat {
 
+Exec {
+
+  path => '/usr/bin:/usr/sbin/:/bin:/sbin:/usr/local/bin:/usr/local/sbin',
+}
+
 include tomcat
 
-tomcat::connector{'http-8080':
-  ensure   => present,
-  instance => 'tomcat1',
-  protocol => 'HTTP/1.1',
-  port     => 8080,
-  manage   => true,
-}
+firewall { '101 allow access to tomcat':
+    ensure => 'present',
+    dport  =>   [8080],
+    proto  =>   tcp,
+    action =>  accept,
+ }                     
 
-tomcat::connector{'ajp-8081':
-  ensure   => present
-  instance => 'tomcat1'
-  protocol => 'AJP/1.3',
-  port     => 8081,
-  manage   => true,
-}
-
-tomcat::instance {'tomcat1':
+tomcat::instance {'dn54.datanetx.comm':
   ensure    => present,
-  group     => 'tomcat-admin',
-  manage    => true,
-  connector => ['http-8080','ajp-8081'],
+  http_port => '8080',
+  http_address => '10.10.10.54',
+ }  
 }
