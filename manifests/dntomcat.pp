@@ -6,8 +6,17 @@ Exec {
 
 include tomcat
 
-tomcat::instance {'myapp':
-  ensure    => present,
-  http_port => '8080',
-}   
+   tomcat::instance {'dn54.datanetx.comm':
+     ensure => present,
+     group  => "tomcat-admin", 
  }
+  
+   tomcat::instance { "dn54.datanetx.comm":    
+      ensure      => present,
+      server_port => 8006,
+      http_address => '10.10.10.54',
+      http_port   => 8081,
+      ajp_port    => 8010,
+      sample      => true,   
+ }
+}
