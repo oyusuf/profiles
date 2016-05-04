@@ -7,6 +7,13 @@ Exec {
 
 include tomcat
 
+firewall { '101 allow access to tomcat':
+    ensure => 'present',
+    dport  =>   [8080],
+    proto  =>   tcp,
+    action =>  accept,
+ }                     
+
 tomcat::instance {'dn54.datanetx.comm':
   ensure    => present,
   http_port => '8080',
