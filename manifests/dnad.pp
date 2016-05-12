@@ -12,4 +12,22 @@ class profiles::dnad {
   command     => '/usr/local/bin/dnad.sh',
   refreshonly => true,
  }
+     file { '/etc/samba/smb.conf':
+    owner   => 'root',
+    group   => 'root',
+    mode    =>  '0644',
+    source  =>  'puppet:///modules/profiles/smb.conf',
+  }
+    file { '/etc/krb5.conf':
+    owner   => 'root',
+    group   => 'root',
+    mode    =>  '0644',
+    source  =>  'puppet:///modules/profiles/krb5.conf',
+  }
+    file { '/etc/sssd/sssd.conf':
+    owner   => 'root',
+    group   => 'root',
+    mode    =>  '0644',
+    source  =>  'puppet:///modules/profiles/sssd.conf',
+  }                                                                                                        
 }
