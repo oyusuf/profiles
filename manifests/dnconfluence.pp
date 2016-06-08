@@ -1,4 +1,4 @@
-class profile::confluence () {
+class profiles::dnconfluence () {
   class { 'postgresql::server': } ->
   postgresql::server::db { 'confluence':
     user     => 'confluence',

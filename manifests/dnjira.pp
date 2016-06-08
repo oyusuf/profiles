@@ -1,4 +1,4 @@
-class profiles::jira () {
+class profiles::dnjira () {
   # include jdk_oracle
 class { 'oracle_java':
   version => '8u45',
