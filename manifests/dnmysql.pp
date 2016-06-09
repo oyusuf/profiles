@@ -10,6 +10,7 @@ class { 'mysql::server':
    host     => 'dn53.datanetx.comm',
    grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
 }
+
 #mysql::db { "mydb_${fqdn}":
 #  user     => ',
 #  password => 'mypass',
@@ -17,7 +18,6 @@ class { 'mysql::server':
 #  host     => $::fqdn,
 #  grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
 #  tag      => $domain,
-#}
 
   firewall { '100 allow MySQL on 3306 & 3307':
     dport  => [3306, 3307, 80, 443],
