@@ -4,7 +4,7 @@ class { 'mysql::server':
   root_password => 'password'
 }
 
-  mysql::db { 'jiradb':
+  mysql::db { 'dn53':
    user     => 'jirauser',
    dbname   => 'jiradb',
    password => 'password',
