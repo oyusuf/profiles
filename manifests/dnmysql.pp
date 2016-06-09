@@ -1,3 +1,4 @@
+####### Module Needed #jlondon-phpmyadmin and #puppetlabs-mysql############### 
 class profiles::dnmysql {
 
 class { 'mysql::server':
