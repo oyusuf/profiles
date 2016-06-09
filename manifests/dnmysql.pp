@@ -5,12 +5,18 @@ class { 'mysql::server':
   root_password => 'password'
 }
 
-  mysql::db { 'dn53':
-   user     => 'jirauser',
-   dbname   => 'jiradb',
+  mysql::db { 'confluencedb':
+   user     => 'confluenceuser',
+   dbname   => 'confluencedb',
    password => 'password',
    host     => 'dn53.datanetx.comm',
    grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
+}
+  mysql::db { 'jiradb':
+  user     => 'jirauser',
+  password => 'jiradb',
+  host     => 'localhost',
+  grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
 }
 
  class {'phpmyadmin':
