@@ -5,13 +5,15 @@
 #  override_options        => $override_options
 # } 
 #}
-class profiles::dnmysql (
-  $override_options = hiera('mysql::override_options'),
-  $db_user_name     = hiera('mysql::db_user_name'),
-  $db_user_password = hiera('mysql::db_user_password'),
-  $db_host          = hiera('mysql::db_host'),
-  $db_name          = hiera('mysql::db_name'),
-  $db_password      = hiera('mysql::db_password'),) {
+#class profiles::dnmysql (
+#  $override_options = hiera('mysql::override_options'),
+#  $db_user_name     = hiera('mysql::db_user_name'),
+#  $db_user_password = hiera('mysql::db_user_password'),
+#  $db_host          = hiera('mysql::db_host'),
+#  $db_name          = hiera('mysql::db_name'),
+#  $db_password      = hiera('mysql::db_password'),) {
+
+class profiles::dnmysql {
   class { '::mysql::server':
     root_password           => $db_password,
     remove_default_accounts => true,
