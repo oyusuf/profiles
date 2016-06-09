@@ -6,6 +6,7 @@ class { 'mysql::server':
 
   mysql::db { 'dn53':
    user     => 'root',
+   dbname   => 'dn53',
    password => 'password',
    host     => 'dn53.datanetx.comm',
    grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
