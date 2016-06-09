@@ -5,7 +5,7 @@ class { 'mysql::server':
 }
 
   mysql::db { 'dn53':
-   user     => 'root',
+   user     => 'jirauser',
    dbname   => 'jiradb',
    password => 'password',
    host     => 'dn53.datanetx.comm',
