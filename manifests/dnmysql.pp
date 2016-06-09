@@ -10,13 +10,13 @@ class { 'mysql::server':
    dbname   => 'confluencedb',
    password => 'password',
    host     => 'dn53.datanetx.comm',
-   grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
+   grant    => ['ALL'],
 }
   mysql::db { 'jiradb':
   user     => 'jirauser',
   password => 'jiradb',
   host     => 'localhost',
-  grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
+  grant    => ['ALL'],
 }
 
  class {'phpmyadmin':
