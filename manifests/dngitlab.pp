@@ -6,7 +6,7 @@ class profiles::dngitlab () {
   }
 
   class { '::gitlab':
-    external_url => 'http://gitlab.paosin.local',
+    external_url => 'http://dn57.datanetx.comm',
   }
 
 }
