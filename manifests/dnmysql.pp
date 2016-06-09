@@ -21,7 +21,7 @@ class { 'mysql::server':
 #  tag      => $domain,
  
 
- class { 'phpmyadmin':
+ class {'phpmyadmin':
   }
 
   phpmyadmin::server { 'default': }
