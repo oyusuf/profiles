@@ -6,20 +6,11 @@ class { 'mysql::server':
 
   mysql::db { 'dn53':
    user     => 'root',
-   dbname   => 'dn53',
+   dbname   => 'jiradb',
    password => 'password',
    host     => 'dn53.datanetx.comm',
    grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
 }
-
-#mysql::db { "mydb_${fqdn}":
-#  user     => ',
-#  password => 'mypass',
-#  dbname   => 'mydb',
-#  host     => $::fqdn,
-#  grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
-#  tag      => $domain,
- 
 
  class {'phpmyadmin':
     enabled          => true,
