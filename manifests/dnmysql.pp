@@ -19,8 +19,14 @@ class { 'mysql::server':
 #  host     => $::fqdn,
 #  grant    => ['SELECT', 'CREATE', 'DELETE', 'UPDATE'],
 #  tag      => $domain,
+ 
 
-  firewall { '100 allow MySQL on 3306 & 3307':
+ class { 'phpmyadmin':
+  }
+
+  phpmyadmin::server { 'default': }
+
+ firewall { '100 allow MySQL on 3306 & 3307':
     dport  => [3306, 3307, 80, 443],
     proto  => tcp,
     action => accept,
