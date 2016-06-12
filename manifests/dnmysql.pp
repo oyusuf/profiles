@@ -21,7 +21,7 @@ class { 'mysql::server':
 
  class {'phpmyadmin':
     enabled          => true,
-    ip_access_ranges => [ '127.0.0.1' ],
+    ip_access_ranges => [ '10.10.10.0/24' ],
 #   ip_access_ranges => [ '10.10.10.0/24', '10.10.10.53' ],
   }
 
