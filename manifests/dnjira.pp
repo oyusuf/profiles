@@ -1,5 +1,5 @@
 class profiles::dnjira () {
-  include jdk_oracle
+#  include jdk_oracle
 
  class {'jdk_oracle':
    version => '8u45',
