@@ -1,23 +1,24 @@
 class profiles::dnjira () {
   # include jdk_oracle
+    include oracle_java
 
-class {'oracle_java':
-  version => '8u45',
-  type    => 'jdk'
-}
+#class {'oracle_java':
+#  version => '8u45',
+#  type    => 'jdk'
+#}
 
- class { '::mysql::server':
+ class {'::mysql::server':
     root_password    => 'password',
   } ->
 
-  mysql::db { 'jira':
+  mysql::db {'jira':
     user     => 'jirauser',
     password => 'jiradb',
     host     => 'dn53.datanetx.comm',
     grant    => ['ALL'],
   } ->
 
-  class { '::jira':
+  class {'::jira':
     javahome => '/opt/java/latest',
     db       => 'mysql',
     dbport   => '3306',
@@ -27,7 +28,7 @@ class {'oracle_java':
 
   include ::jira::facts 
 
-  firewall { '120 allow puppet stuff':
+  firewall {'120 allow puppet stuff':
     dport  => [8080],
     proto  => tcp,
     action => accept,
