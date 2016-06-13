@@ -5,27 +5,26 @@ class { 'oracle_java':
   type    => 'jdk'
 }
 
-  class { 'mysql::server': }
- 
-  mysql::db { 'jiradb':
+ class { '::mysql::server':
+    root_password    => 'password',
+  } ->
+
+  mysql::db { 'jira':
     user     => 'jirauser',
     password => 'jiradb',
     host     => 'dn53.datanetx.comm',
-    grant    => ['ALL'],  
+    grant    => ['ALL'],
+  } ->
 
-#  postgresql::server::db { 'jira':
-#    user     => 'jiraadm',
-#    password => postgresql_password('jiraadm', 'mypassword'),
-#  }
-
-  class { 'jira':
-    javahome => '/usr',
+  class { '::jira':
+    javahome => '/opt/java/latest',
     db       => 'mysql',
-    dbuser   => 'jirauser',
+    dbport   => '3306',
+    dbdriver => 'com.mysql.jdbc.Driver',
+    dbtype   => 'mysql',
   }
 
-  class { 'jira::facts':
-  }
+  include ::jira::facts 
 
   firewall { '120 allow puppet stuff':
     dport  => [8080],
