@@ -10,15 +10,16 @@ class profiles::dnjira () {
     root_password    => 'password',
   } ->
 
-  mysql::db {'jira':
+  mysql::db {'jiradb':
     user     => 'jirauser',
-    password => 'jiradb',
+    password => 'password',
     host     => 'dn53.datanetx.comm',
     grant    => ['ALL'],
   } ->
 
   class {'::jira':
     javahome => '/opt/java/latest',
+    deploy_module => 'archive',
     db       => 'mysql',
     dbport   => '3306',
     dbdriver => 'com.mysql.jdbc.Driver',
