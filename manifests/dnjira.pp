@@ -1,5 +1,6 @@
 class profiles::dnjira () {
-  include jdk_oracle
+#  include jdk_oracle
+  include oracle_java
   include deploy 
 
 # class {'jdk_oracle':
