@@ -14,7 +14,7 @@ class { 'mysql::server':
 }
   mysql::db { 'jiradb':
   user     => 'jirauser',
-  password => 'jiradb',
+  password => 'password',
   host     => 'dn53.datanetx.comm',
   grant    => ['ALL'],
 }
