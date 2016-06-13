@@ -1,10 +1,10 @@
 class profiles::dnjira () {
   # include jdk_oracle
-class { 'oracle_java':
+class {'oracle_java':
   version => '8u45',
   type    => 'jdk'
 }
-
+i
  class { '::mysql::server':
     root_password    => 'password',
   } ->
