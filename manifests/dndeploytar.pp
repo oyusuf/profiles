@@ -8,9 +8,9 @@ class profiles::dndeploytar ($source = '', $target = '') {
 #    verbose     => false,
 #  }
 
-  exec {"atlassian-jira-6.4.1.tar.gz":
+  exec {"untarit":
     command => 'tar -xvf ',
-    cwd     => $target,
+    cwd     => 'atlassian-jira-6.4.1.tar.gz',
     path    => ["/bin", "/usr/sbin"],
 #    require => Exec['download_some_tar_file']
   }
