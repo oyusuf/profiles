@@ -1,4 +1,4 @@
-class profiles::deploytar ($source = '', $target = '') {
+class profiles::dndeploytar ($source = '', $target = '') {
   include wget
 
   wget::fetch {"download_some_tar_file":
