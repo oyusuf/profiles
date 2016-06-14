@@ -1,12 +1,12 @@
-class profiles::dnjira () {
-#  include jdk_oracle
+#class profiles::dnjira () {
 #  include oracle_java
-   include deploy 
 
- class {'oracle_java':
-   version => '8u45',
-   type    => 'jdk'
- }
+# class {'oracle_java':
+#   version => '8u45',
+#   type    => 'jdk'
+# }
+
+class profiles::dnjira {
 
  class {'::mysql::server':
     root_password    => 'password',
@@ -19,8 +19,10 @@ class profiles::dnjira () {
     grant    => ['ALL'],
   } ->
 
-  class {'::jira':
-    javahome => '/opt/java/latest',
+#  class {'::jira':
+  
+ class {'jira':
+    javahome => '/opt/java',
     deploy_module => 'archive',
     db       => 'mysql',
     dbport   => '3306',
