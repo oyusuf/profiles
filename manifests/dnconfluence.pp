@@ -1,8 +1,8 @@
 class profiles::dnconfluence () {
-  class { 'postgresql::server': } ->
-  postgresql::server::db { 'confluence':
-    user     => 'confluence',
-    password => postgresql_password('confluence', 'mysuperinsecurepasswd'),
+  class { 'msqlsql::server': } ->
+  mysql::server::db { 'confluencedb':
+    user     => 'confluenceuser',
+    password =>  password,
   } ->
   class { 'oracle_java':
     version => '8u77',
