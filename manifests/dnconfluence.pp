@@ -20,6 +20,7 @@ class { 'mysql::server':
  
  class { 'confluence':
  #   version    => '5.9.6',
+    deploy_module => 'archive',
     installdir => '/opt/atlassian/confluence',
     homedir    => '/var/atlassian/application-data/confluence',
     javahome   => '/usr/java/default',
