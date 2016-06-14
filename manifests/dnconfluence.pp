@@ -1,6 +1,6 @@
 class profiles::dnconfluence () {
  
- class {'msqlsql::server': } ->
+ class {'mysql::server': } ->
     mysql::server::db { 'confluencedb':
     user     => 'confluenceuser',
     password =>  password,
