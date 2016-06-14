@@ -1,12 +1,11 @@
-#class profiles::dnjira () {
-#  include oracle_java
-
-# class {'oracle_java':
-#   version => '8u45',
-#   type    => 'jdk'
-# }
-
 class profiles::dnjira {
+
+class {'jira':
+  javahome    => '/opt/java',
+  version     => '6.3.7',
+}
+
+class {'jira::facts': }
 
  class {'::mysql::server':
     root_password    => 'password',
@@ -19,8 +18,6 @@ class profiles::dnjira {
     grant    => ['ALL'],
   } ->
 
-#  class {'::jira':
-  
  class {'jira':
     javahome => '/opt/java',
     deploy_module => 'archive',
@@ -29,8 +26,6 @@ class profiles::dnjira {
     dbdriver => 'com.mysql.jdbc.Driver',
     dbtype   => 'mysql',
   }
-
-  include ::jira::facts 
 
   firewall {'120 allow puppet stuff':
     dport  => [8080],
