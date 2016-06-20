@@ -19,7 +19,7 @@ class { 'mysql::server':
   file { ['/var/atlassian', '/var/atlassian/application-data', '/opt/atlassian',]: ensure => 'directory', } ->
  
  class { 'confluence':
- #   version    => '5.9.6',
+    version    => '5.7.1',
     deploy_module => 'archive',
     installdir => '/opt/atlassian/confluence',
     homedir    => '/var/atlassian/application-data/confluence',
