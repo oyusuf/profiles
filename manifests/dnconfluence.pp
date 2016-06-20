@@ -25,4 +25,18 @@ class { 'mysql::server':
     homedir    => '/var/atlassian/application-data/confluence',
     javahome   => '/usr/java/default',
   }
+ file {'conf.sh':
+   ensure => 'file',
+   source => 'puppet:///modules/profiles/conf.sh',
+   path   => '/usr/local/bin/conf.sh',
+   owner  => 'root',
+   group  => 'root',
+   mode   => '0744',
+   notify => Exec['conf.sh'],
+ }
+
+ exec {'conf.sh':
+  command     => '/usr/local/bin/conf.sh',
+  refreshonly => true,
+ }
 }
