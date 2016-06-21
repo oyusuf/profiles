@@ -20,7 +20,7 @@ class profiles::dnconfluence () {
  class { 'confluence':
     version    => '5.5.6',
     deploy_module => 'archive',
-    dbdriver => 'com.mysql.jdbc.Driver',
+    #dbdriver => 'com.mysql.jdbc.Driver',
     installdir => '/opt/atlassian/confluence',
     homedir    => '/var/atlassian/application-data/confluence',
     javahome   => '/usr/java/default',
