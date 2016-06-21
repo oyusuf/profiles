@@ -26,6 +26,12 @@ class { 'mysql::server':
     javahome   => '/usr/java/default',
   }
 
+  include '::archive'
+
+  Archive {
+    provider => 'ruby',
+}
+
 # file {'conf.sh':
 #   ensure => 'file',
 #   source => 'puppet:///modules/profiles/conf.sh',
