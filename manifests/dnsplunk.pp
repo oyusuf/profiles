@@ -1,8 +1,5 @@
 class profiles::dnsplunk {
- 
-class {"splunk":
-  puppi  => true,
-  } 
+ include ::splunk
 
   firewall {'120 allow Splunk Stuff':
     dport  => [8080],
