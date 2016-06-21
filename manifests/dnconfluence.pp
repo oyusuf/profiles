@@ -1,6 +1,5 @@
-class profiles::dnconfluence {
-
-class { 'mysql::server':
+class profiles::dnconfluence () {
+ class { 'mysql::server':
   root_password => 'password'
 }
 
