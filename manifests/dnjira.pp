@@ -1,4 +1,4 @@
-class profiles::dnjira {
+class profiles::dnjira () {
  class {'jira':
     javahome => '/opt/java',
     version  => '6.3.7',
