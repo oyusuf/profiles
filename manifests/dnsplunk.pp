@@ -1,5 +1,6 @@
-class profiles::dnsplunk () {
- class {"splunk":
+class profiles::dnsplunk {
+ 
+class {"splunk":
   puppi  => true,
   } 
 
