@@ -29,17 +29,4 @@ class profiles::dnjira {
   }
   
   include '::archive'
-   
-#   archive {'/tmp/atlassian-jira-6.3.7.tar.gz':
-#  ensure        => present,
-#  extract       => true,
-#  extract_path  => '/tmp',
-#  source        => 'https://downloads.atlassian.com/software/jira/downloads/',
-#  checksum      => '',
-#  checksum_type => 'none',
-#  creates       => '/tmp/javax',
-#  cleanup       => true,
-#  user          => 'vagrant',
-#  group         => 'vagrant',
-#}   
 }
