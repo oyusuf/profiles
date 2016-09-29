@@ -1,9 +1,9 @@
 class profiles::dnhttpd {
       package { 'httpd':
-        ensure => installed,
+      ensure => installed,
      }
       service { 'httpd':
-        ensure    => 'running',
-        enable    => true,
+      ensure  => 'running',
+      enable  => true,
       }
     }
