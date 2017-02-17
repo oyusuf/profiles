@@ -1,0 +1,49 @@
+nput>
+  <variables>
+    <variable name='sharedLocation' value='/opt/IBM/IMShared'/>
+  </variables>
+  <server>
+    <repository location='/opt/CDSPackage/Server_Repository'/>
+    <repository location='/opt/CDSPackage/disk1'/>
+    <repository location='/opt/JAVA7Package'/>
+    <repository location='/opt/WASPackage'/>
+    <repository location='/opt/WASfixpack'/>
+  </server>
+  <profile id='IBM SPSS Collaboration and Deployment Services - Remote Process Server' installLocation='/opt/IBM/SPSS/Deployment/8.0/RemoteProcessServer'>
+    <data key='cic.selector.arch' value='x86_64'/>
+    <data key='user.rpsServiceSSL' value='false'/>
+    <data key='user.rpsServiceName' value='fps2cnds'/>
+    <data key='user.rpsServicePort' value='9080'/>
+    <data key='user.cadsURL' value='http://ustlvcmsp2306:9080'/>
+    <data key='user.cadsPass' value='#$Krazy#$'/>
+    <data key='user.cadsUser' value='admin'/>
+  </profile>
+  <install>
+    <!-- IBM SPSS Collaboration and Deployment Services - Remote Process Server 8.0.0.0 -->
+    <offering profile='IBM SPSS Collaboration and Deployment Services - Remote Process Server' id='com.ibm.spss.rps' version='8.0.0.20160223_1504' features='main.feature'/>
+  </install>
+  <profile id='IBM SPSS Collaboration and Deployment Services - Remote Scoring Server 8.0' installLocation='/opt/IBM/SPSS/Deployment/8.0/ScoringServer'>
+    <data key='cic.selector.arch' value='x86_64'/>
+    <data key='user.cdsUser' value='admin'/>
+    <data key='user.cdsSibPort' value='7276'/>
+    <data key='user.cdsUrl' value='http://ustlvcmsp2306:9080'/>
+    <data key='user.cdsPass' value='#$Krazy#$'/>
+  </profile>
+  <install>
+    <!-- IBM SPSS Collaboration and Deployment Services - Remote Scoring Server 8.0.0.0 -->
+ <offering profile='IBM SPSS Collaboration and Deployment Services - Remote Scoring Server 8.0' id='com.ibm.spss.cds.scoring.server.v8.offering' version='8.0.0.20160223_230' features='com.ibm.spss.cds.scoring.server.main,deploy.liberty'/>
+    <!-- IBM SPSS Modeler Adapters for Collaboration and Deployment Services 18.0.0.0 -->
+    <offering profile='IBM SPSS Collaboration and Deployment Services - Remote Scoring Server 8.0' id='com.ibm.spss.modeler.adapter.18.0' version='18.0.0.20160302_102' features='main.feature,text.analytics,social.networks,entity.analytics'/>
+   <!-- IBM SPSS PMML Scoring Adapter 8.0.0.0 -->
+    <offering profile='IBM SPSS Collaboration and Deployment Services - Remote Scoring Server 8.0' id='com.ibm.spss.pmml.scoring.adapter.v8' version='8.0.0.20160223_230' features='main.feature'/>
+  </install>
+  <profile id='IBM SPSS Collaboration and Deployment Services 8.0' installLocation='/opt/IBM/SPSS/Deployment/8.0/Server'>
+    <data key='cic.selector.arch' value='x86_64'/>
+  </profile>
+  <install>
+    <!-- IBM SPSS Collaboration and Deployment Services - Repository Server 8.0.0.0 -->
+    <offering profile='IBM SPSS Collaboration and Deployment Services 8.0' id='com.ibm.spss.cds.server.v8.offering' version='8.0.0.20160223_230' features='com.ibm.spss.cds.server.main'/>
+  </install>
+  <preference name='com.ibm.cic.common.core.preferences.eclipseCache' value='${sharedLocation}'/>
+  <preference name='offering.service.repositories.areUsed' value='false'/>
+</agent-input>
