@@ -4,6 +4,6 @@
 ############################   BPM FIXPACK INSTALL ###########################
 #/opt/IBM/InstallationManager/eclipse/tools/imcl install com.ibm.bpm.ADV.v85 -acceptLicense -installationDirectory /opt/IBM/WebSphere/ -repositories /opt/BPMFixpack -log /tmp/CF2Install.log
 ###########################    WAS PROFILE  ##################################
-#/opt/IBM/WebSphere/AppServer/bin/manageprofiles.sh -create -profileName AppSrv01 -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default -profilePath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01  -enableAdminSecurity true -adminUserName wasadmin -adminPassword p@ssw0rd
+#/opt/IBM/WebSphere/AppServer/bin/manageprofiles.sh -create -profileName AppSrv01 -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default -profilePath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01  -enableAdminSecurity true -adminUserName wasadmin -adminPassword #$P@ssw0rd#$
 #################### START WAS ##############################################
 #/opt/IBM/WebSphere/AppServer/bin/startServer.sh server1
