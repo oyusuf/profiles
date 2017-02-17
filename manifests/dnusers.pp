@@ -3,8 +3,8 @@ class profiles::dnusers {
     comment     => 'oyusuf',
     home        => '/home/oyusuf',
     shell       => '/bin/bash',
-    uid         => 503,
-    gid         => 503,
+    uid         => 501,
+    gid         => 501,
     managehome  => true,
     password    => '$1$TMdOH2gV$drAuBV2ZySYArVXL2/OQG1',
     groups      => oyusuf,
@@ -12,15 +12,15 @@ class profiles::dnusers {
   }
 
   group { 'oyusuf':
-    gid         =>503,
+    gid         =>501,
   }
 
   user { 'eyusuf':
     comment     => 'eyusuf',
     home        => '/home/eyusuf',
     shell       => '/bin/bash',
-    uid         => 502,
-    gid         => 502,
+    uid         => 505,
+    gid         => 505,
     managehome  => true,
     password    => '$1$TMdOH2gV$drAuBV2ZySYArVXL2/OQG1',
     groups      => eyusuf,
@@ -28,7 +28,7 @@ class profiles::dnusers {
   }
  
     group { 'eyusuf':
-    gid         =>502,
+    gid         =>505,
   }
 
 }
