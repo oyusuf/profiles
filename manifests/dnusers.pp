@@ -6,7 +6,7 @@ class profiles::dnusers {
     uid         => 501,
     gid         => 501,
     managehome  => true,
-    password    => '$1$TMdOH2gV$drAuBV2ZySYArVXL2/OQG1',
+    password    => ':$6$bFMEd2GQ$ua4dkO2cSrHxkHnpzAvThz58RtC.Nt/FWIEsDrPr68PiF23CTo3GY19MELz8rM/2BUWrNLVwXcxaZ73fI9Unb.',
     groups      => oyusuf,
     require     => Group[oyusuf],
   }
@@ -22,7 +22,7 @@ class profiles::dnusers {
     uid         => 505,
     gid         => 505,
     managehome  => true,
-    password    => '$1$TMdOH2gV$drAuBV2ZySYArVXL2/OQG1',
+    password    => ':$6$bFMEd2GQ$ua4dkO2cSrHxkHnpzAvThz58RtC.Nt/FWIEsDrPr68PiF23CTo3GY19MELz8rM/2BUWrNLVwXcxaZ73fI9Unb.',
     groups      => eyusuf,
     require     => Group[eyusuf],
   }
