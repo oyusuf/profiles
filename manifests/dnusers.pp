@@ -31,4 +31,19 @@ class profiles::dnusers {
     gid         =>505,
   }
 
+  user { 'jenkins':
+    comment     => 'jenkins',
+    home        => '/home/jenkins',
+    shell       => '/bin/bash',
+    uid         => 504,
+    gid         => 504,
+    managehome  => true,
+    password    => '$6$bFMEd2GQ$ua4dkO2cSrHxkHnpzAvThz58RtC.Nt/FWIEsDrPr68PiF23CTo3GY19MELz8rM/2BUWrNLVwXcxaZ73fI9Unb.',
+    groups      => jenkins,
+    require     => Group[jenkins],
+  }
+
+    group { 'jenkins':
+    gid         =>504,
+  }
 }
