@@ -4,9 +4,9 @@
     <variable name='sharedLocation' value='/opt/IBM/IMShared'/>
   </variables>
   <server>
-    <repository location='/opt/JAVA7Package'/>
-    <repository location='/opt/WASPackage'/>
-    <repository location='/opt/WASfixpack'/>
+    <repository location='/apps/JAVA7Package'/>
+    <repository location='/apps/WASPackage'/>
+    <repository location='/apps/WASfixpack'/>
   </server>
   <profile id='IBM WebSphere Application Server V8.5' installLocation='/opt/IBM/WebSphere/AppServer'>
     <data key='cic.selector.arch' value='x86'/>
