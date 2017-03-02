@@ -1,7 +1,7 @@
 class profiles::ibm_installation_manager {
   class { 'ibm_installation_manager':
   deploy_source => true,
-#source => 'http://dnx13.datanix.comm/agent.installer.linux.gtk.x86_64_1.8.5000.20160506_1125.zip',
+ #source => 'http://dnx13.datanix.comm/agent.installer.linux.gtk.x86_64_1.8.5000.20160506_1125.zip',
  source => 'http://dnx13.datanix.comm/agent.installer.linux.gtk.x86_1.8.5000.20160506_1125.zip',
   source_dir => '/opt/IBM/tmp/InstallationManager',
   target => '/opt/IBM/',
