@@ -6,7 +6,6 @@ class profiles::dngitlab () {
   }
 
   class {'::gitlab':
-    external_url => 'http://dnx15.datanix.comm',
+    external_url => 'http://dnx16.datanix.comm',
   }
-
 }
