@@ -35,8 +35,8 @@ class profiles::dnusers {
     comment     => 'josephy',
     home        => '/home/josephy',
     shell       => '/bin/bash',
-    uid         => 506,
-    gid         => 506,
+    uid         => 509,
+    gid         => 509,
     managehome  => true,
     password    => '$6$bFMEd2GQ$ua4dkO2cSrHxkHnpzAvThz58RtC.Nt/FWIEsDrPr68PiF23CTo3GY19MELz8rM/2BUWrNLVwXcxaZ73fI9Unb.',
     groups      => josephy,
@@ -44,6 +44,6 @@ class profiles::dnusers {
   }
 
     group { 'josephy':
-    gid         =>506,
+    gid         =>509,
   }
 }
