@@ -4,8 +4,10 @@
 
 ###################### Was profile for ordinary WAS Install ##############################################
 /opt/IBM/WebSphere/AppServer/bin/manageprofiles.sh -create -profileName AppSrv01 -enableService false -hostname dnx17.datanix.comm -serverName server1 -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default -profilePath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01  -enableAdminSecurity true -adminUserName wasadmin -adminPassword Stadia2810Thing
+
 ######################## Was Profile Creations for clauster WAS ###########################
 #/opt/IBM/WebSphere/AppServer/bin/manageprofiles.sh -create -profileName AppSrv01 -enableService false -hostname ustlvcmsp2344.rdcms.eds.com -nodeName ustlvcmsp2344Node01 -cellName ustlvcmsp2344Node01Cell -serverName server1 -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default -profilePath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01  -enableAdminSecurity true -adminUserName wasadmin -adminPassword Stadia2810Thing
+
 #####################  Starting Was Server ###################################
 /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
 /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startServer.sh server1
