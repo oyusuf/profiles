@@ -13,5 +13,5 @@
 /opt/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/startServer.sh server1
 
 ####################  Was Federation ###################################
-/opt/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/addNode.sh dnx22.datanix.comm 8879 -username wasadmin -password FPS2Snippers
+/opt/IBM/WebSphere/AppServer/profiles/AppSrv02/bin/addNode.sh dnx22.datanix.comm 8879 -username wasadmin -password FPS2Snippers#$
 
