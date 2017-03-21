@@ -10,8 +10,6 @@ class profiles::dncheckmk {
     group   => 'root',
     mode    =>  '0644',
     source  =>  'puppet:///modules/profiles/check-mk-agent',
-    require =>  Package['check-mk-agent'],
-    require =>  Package['epel-release'],
+    require =>  Package['check-mk-agent', 'epel-release'],
  }
-
 }
